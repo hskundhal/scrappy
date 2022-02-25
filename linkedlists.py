@@ -154,26 +154,40 @@ my_linked_list.insert(1,1)
 my_linked_list.print_list()
 
 
-class Cookie:
-    def __init__(self, color):
-        self.color = color
+class DNode:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+        self.prev = None
+        
 
-    def get_color(self):
-        return self.color
+class DoublyLinkedList:
+    def __init__(self, value):
+        new_node = DNode(value)
+        self.head = new_node
+        self.tail = new_node
+        self.length = 1
 
-    def set_color(self, color):
-        self.color = color
+    def print_list(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.value)
+            temp = temp.next
+        
+    def append(self, value):
+        new_node = DNode(value)
+        if self.head is None:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            self.tail.next = new_node
+            new_node.prev = self.tail
+            self.tail = new_node
+        self.length += 1
+        return True
+  
 
+my_doubly_linked_list = DoublyLinkedList(1)
+my_doubly_linked_list.append(2)
 
-cookie_one = Cookie('green')
-cookie_two = Cookie('blue')
-
-print('Cookie one is', cookie_one.get_color())
-print('Cookie two is', cookie_two.get_color())
-
-cookie_one.set_color('yellow')
-
-print('\nCookie one is now', cookie_one.get_color())
-print('Cookie two is still', cookie_two.get_color())
-
-
+my_doubly_linked_list.print_list()
