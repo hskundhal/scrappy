@@ -1,6 +1,9 @@
 
 
 
+import re
+
+
 class Node:
     def __init__(self,value):
         self.value = value
@@ -82,14 +85,46 @@ class BinaryTree:
         traverse(temp)
         return results
     
+    def dfs_post_order(self):
+        results = []
+        if self.root is None:
+            return results
+        temp = self.root
+        # queue = []
+        # queue.append
+        def traverse(temp):
+            if temp.left is not None:
+                traverse(temp.left)
+            if temp.right is not None:
+                traverse(temp.right)
+            results.append(temp.value)
+        traverse(temp)
+        return results
+        
+    def dfs_in_order(self):
+        results= []
+        if self.root is None:
+            return results
+        def traverse(temp):
+            if temp.left is not None:
+                traverse(temp.left)
+            results.append(temp.value)
+            if temp.right is not None:
+                traverse(temp.right)
+        traverse(self.root)
+        return results
+    
+
 mytree = BinaryTree()
-mytree.insert(9)
-mytree.insert(6)
-mytree.insert(4)
 mytree.insert(7)
-mytree.insert(5)
-mytree.insert(10)
+mytree.insert(1)
 mytree.insert(3)
+mytree.insert(8)
+mytree.insert(2)
+mytree.insert(5)
+mytree.insert(8)
 mytree.insert(2)
 print(mytree.dfs())
 print(mytree.BFS())
+print(mytree.dfs_post_order())
+print(mytree.dfs_in_order())
