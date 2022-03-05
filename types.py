@@ -10,4 +10,7 @@ dict1['value'] = 12
 print(dict1)
 print(dict2)
 
-# List is continous in memory ---- Linked List is spread around and dont have indexes.
+# Numpy arrays use continous in memory ---- 
+# pythons built in List have reference to location in memory for data. reference itself is 8 bytes
+# python is built using c,c++
+# Linked List is spread around and dont have indexes.

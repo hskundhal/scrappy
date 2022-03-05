@@ -1,4 +1,5 @@
-# space complexity O(n)  time complexity O(n log n) where O(n) for while loops and O(log n) for division into mulitple small sets
+# space complexity O(n)  time complexity O(n log n) where O(n) for while loops 
+# and O(log n) for division into mulitple small sets
 
 def merge(array1, array2):
     combined = []
