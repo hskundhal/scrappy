@@ -17,4 +17,8 @@ def dutchflagsort(array):
             k-=1
             
     print(array)
-dutchflagsort([1,1,2,0,1,0])
+
+
+
+if __name__ == '__main__':
+    dutchflagsort([1,1,2,0,1,0])
