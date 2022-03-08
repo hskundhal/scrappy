@@ -122,35 +122,37 @@ class LinkedList:
             before = temp
             temp = after
 
-my_linked_list = LinkedList(2)
-my_linked_list.append(1)
-my_linked_list.append(12)
-my_linked_list.append(13)
-my_linked_list.append(14)
-my_linked_list.print_list()
-# (2) Items - Returns 2 Node
-print(my_linked_list.pop())
-# (1) Item -  Returns 1 Node
-print(my_linked_list.pop_first())
-# (0) Items - Returns None
-print(my_linked_list.get(1))
+if __name__ =="__main__":
 
-my_linked_list.print_list()
+    my_linked_list = LinkedList(2)
+    my_linked_list.append(1)
+    my_linked_list.append(12)
+    my_linked_list.append(13)
+    my_linked_list.append(14)
+    my_linked_list.print_list()
+    # (2) Items - Returns 2 Node
+    print(my_linked_list.pop())
+    # (1) Item -  Returns 1 Node
+    print(my_linked_list.pop_first())
+    # (0) Items - Returns None
+    print(my_linked_list.get(1))
+
+    my_linked_list.print_list()
 
 
 
 
-my_linked_list.remove(3)
-my_linked_list.append(23)
-my_linked_list.set_value(3,7)
-my_linked_list.print_list()
+    my_linked_list.remove(3)
+    my_linked_list.append(23)
+    my_linked_list.set_value(3,7)
+    my_linked_list.print_list()
 
-my_linked_list.reverse()
+    my_linked_list.reverse()
 
-my_linked_list.print_list()
+    my_linked_list.print_list()
 
-my_linked_list.insert(1,1)
+    my_linked_list.insert(1,1)
 
-my_linked_list.print_list()
+    my_linked_list.print_list()
 
 

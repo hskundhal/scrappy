@@ -58,3 +58,9 @@ print(list_siblings)
 late = ('19', '17', '14', '10', '11')
 print(sorted(late))
 
+from collections import deque
+doublelinklistfromdeque = deque()
+doublelinklistfromdeque.append(1)
+doublelinklistfromdeque.append(9)
+doublelinklistfromdeque.append(2)
+print(doublelinklistfromdeque)
