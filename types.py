@@ -11,7 +11,8 @@ print(dict1)
 print(dict2)
 
 # Numpy arrays use continous in memory ---- 
-# pythons built in List have reference to location in memory for data. reference itself is 8 bytes
+# pythons built in List have reference to location in memory for data. reference itself 
+# is 8 bytes
 # python is built using c,c++
 # Linked List is spread around and dont have indexes.
 
@@ -64,3 +65,7 @@ doublelinklistfromdeque.append(1)
 doublelinklistfromdeque.append(9)
 doublelinklistfromdeque.append(2)
 print(doublelinklistfromdeque)
+
+
+#JSON
+# The reason is that the json.load() method can only handle a single JSON object.
