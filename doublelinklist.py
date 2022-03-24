@@ -133,30 +133,36 @@ class DoublyLinkedList:
 my_doubly_linked_list = DoublyLinkedList(0)
 my_doubly_linked_list.append(1)
 my_doubly_linked_list.append(2)
-
-print(my_doubly_linked_list.remove(1), '\n')
+my_doubly_linked_list.append(3)
+my_doubly_linked_list.append(5)
+print(my_doubly_linked_list.remove(1).value)
 
 my_doubly_linked_list.print_list()
 
   
   
 
-my_doubly_linked_list = DoublyLinkedList(1)
-my_doubly_linked_list.append(2)
+# my_doubly_linked_list = DoublyLinkedList(1)
+my_doubly_linked_list.append(6)
 
 my_doubly_linked_list.print_list()
 
  
 
-my_doubly_linked_list = DoublyLinkedList(1)
-my_doubly_linked_list.append(2)
+# my_doubly_linked_list = DoublyLinkedList(1)
+my_doubly_linked_list.append(9)
 
 
 # (2) Items - Returns 2 Node
-print(my_doubly_linked_list.pop())
+print(my_doubly_linked_list.pop().value)
 # (1) Item -  Returns 1 Node
-print(my_doubly_linked_list.pop())
+print(my_doubly_linked_list.pop().value)
 # (0) Items - Returns None
-print(my_doubly_linked_list.pop())
+print(my_doubly_linked_list.pop().value)
 
 my_doubly_linked_list.print_list()
+
+print("done")
+print(my_doubly_linked_list.get(2).value)
+print(my_doubly_linked_list.get(0).value)
+print(my_doubly_linked_list.get(3))
