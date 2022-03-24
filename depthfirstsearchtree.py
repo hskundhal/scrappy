@@ -41,10 +41,14 @@ class BinaryTree:
             if value < temp.value:
                 if temp.left is not None:
                     temp = temp.left
+                else:
+                    return False
                     
             else:
                 if temp.right is not None:
                     temp = temp.right
+                else:
+                    return False
                     
         return False
     def BFS(self):
@@ -123,3 +127,5 @@ print(mytree.dfs())
 print(mytree.BFS())
 print(mytree.dfs_post_order())
 print(mytree.dfs_in_order())
+print(mytree.contains(7))
+print(mytree.contains(6))
