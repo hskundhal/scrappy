@@ -65,7 +65,7 @@ class BinaryTree:
             if current_node.right is not None:
                 queue.append(current_node.right)
         return results
-    def dfs(self ):
+    def dfs_pre_order(self ):
         results = []
         if self.root is None:
             return results
@@ -123,8 +123,8 @@ mytree.insert(2)
 mytree.insert(5)
 mytree.insert(8)
 mytree.insert(2)
-print(mytree.dfs())
 print(mytree.BFS())
+print(mytree.dfs_pre_order())
 print(mytree.dfs_post_order())
 print(mytree.dfs_in_order())
 print(mytree.contains(7))
