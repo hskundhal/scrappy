@@ -31,7 +31,8 @@ def recommendproduct(product_id):
             for pr in row:
                 if pr == prod:
                     continue
-                allpr[pr['item']]=1
+                allpr[pr['item']]=1 
+                # {prod1:1, prod2:1}
             
             item_id = prod['item']
             if item_id in prodreldict:
@@ -71,7 +72,7 @@ def recommendproduct(product_id):
             break
 
 
-    print("Recommendation for product ",product_id, " is product  with product id,name ", result  )
+    print("Recommendation for product ",product_id, " is product  with products id,name ", result  )
     tendfinal = time.time()
     # print("times taken to read", tend-tstart," time taken for parse", tendfinal -tend,"time taken for all:", tendfinal - tstart)
 
