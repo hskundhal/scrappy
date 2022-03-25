@@ -22,11 +22,11 @@ print(m)
 
 d = {"name":"python", "version":3.9}
 new_list = list(d.items())
-print(new_list)
+print("items : ",new_list)
 
 
 new_list = list(d.keys())
-print(new_list)
+print("keys :",new_list)
 
 
 new_list = list(d.values())
@@ -39,6 +39,7 @@ new_list = []
  
 for i in d:
   k = [i, d[i]]
+  print("i ",i, " d[i] ", d[i] )
   new_list.append(k)
  
 print(new_list)

@@ -1,3 +1,7 @@
+# binray seaarch tree has ologn time complexity
+#  in case binary search tree is like linked list, time complexity goes to n
+#  insert, remove, search is o log n for binary searchtree while remove search is o n for linked list while insert in linked lsit is o 1
+
 class Node:
     def __init__(self, value):
         self.value = value
